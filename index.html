@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baby Name Guru</title>
+    <!-- Import Baloo 2 font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Sidebar Menu -->
+    <nav id="sidebar">
+      <ul>
+        <li><a href="#page1">Home</a></li>
+        <li><a href="#page2">Find your baby's name</a></li>
+        <li><a href="#page3">Privacy Policy</a></li>
+        <li><a href="#page4">Support &amp; Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="container">
+      <!-- Page 1: Home (with text and background video side-by-side) -->
+      <section class="page" id="page1">
+        <div class="home-container">
+          <div class="text-content">
+            <h1>Baby Name Guru</h1>
+            <p>Find your baby's name</p>
+            <a href="https://apps.apple.com/au/app/baby-name-guru/id6743026761" class="app-store-button">
+              Download on the App Store
+            </a>
+          </div>
+          <div class="video-container">
+            <video autoplay muted loop id="background-video">
+              <source src="bngvideo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 2: Why and How -->
+      <section class="page" id="page2">
+        <div class="content">
+          <h1>Find your baby's name</h1>
+          <p>
+            Scroll through thousands of baby boy, girl, and gender neutral names. Featuring popular, unique, vintage and common names for your little one. Easy user interface. No in app purchases.
+            Find your bub's name.
+          </p>
+          <br /><br />
+          <!-- 3D Flip Card Feature -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="front-text">Front</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="back-text">Back</p>
+                </div>
+            </div>
+        </div>
+          <a href="https://apps.apple.com/au/app/baby-name-guru/id6743026761" class="app-store-button">
+            Download on the App Store
+          </a>
+        </div>
+      </section>
+
+      <!-- Page 3: Privacy Policy -->
+      <section class="page" id="page3">
+        <div class="content">
+          <h1>Privacy Policy</h1>
+          <p>
+            This app does not collect any data of any kind besides that required by a phone to operate apps and enable history taking of swipes which is stored locally on your phone.
+          </p>
+          <h1>User Privacy Policy</h1>
+          <p>
+            No data is collected, used or shared. Users are welcome to screenshot to keep a lasting record of swipe selections.
+          </p>
+          <a href="https://apps.apple.com/au/app/baby-name-guru/id6743026761" class="app-store-button">
+            Download on the App Store
+          </a>
+        </div>
+      </section>
+
+      <!-- Page 4: Support & Contact Information -->
+      <section class="page" id="page4">
+        <div class="content">
+          <h1>Support &amp; Contact</h1>
+          <p>
+            Online only. Developed in Australia
+            <br /><br />
+            Enquiries and recommendations are accepted via the form below.
+            Tell us if we were helpful in finding your baby’s name.
+          </p>
+          <!-- Enquiry Form -->
+          <form id="enquiryForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Your email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required placeholder="Your enquiry"></textarea>
+            </div>
+            <button type="submit">Submit Enquiry</button>
+          </form>
+          <a href="https://apps.apple.com/au/app/baby-name-guru/id6743026761" class="app-store-button">
+            Download on the App Store
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Trending Modal Feature -->
+    <div id="trend-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Babies born today</h2>
+        <p id="births-today">Loading...</p>
+    </div>
+    
+    <!-- The script is written in TypeScript (compiled to JavaScript) -->
+    <script src="script.js"></script>
+  </body>
+</html>
